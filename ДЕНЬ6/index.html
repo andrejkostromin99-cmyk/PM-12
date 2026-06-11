@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Цифровая безопасность для детей и подростков. Обучение основам безопасного поведения в интернете.">
+    <title>Цифровая безопасность | Обучение детей и подростков</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="navbar">
+            <a href="#" class="logo">🔐 КиберБезопасность</a>
+            <button class="burger" id="burgerBtn">☰</button>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#video-lessons">Видео уроки</a></li>
+                <li><a href="#register-form">Регистрация</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero секция -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Цифровая безопасность<br>детей и подростков</h1>
+                <p>Научитесь защищать себя в интернете: безопасное общение, защита личных данных и правила поведения в сети</p>
+                <div class="hero-buttons">
+                    <a href="#video-lessons" class="btn btn-primary">Начать обучение</a>
+                    <a href="#register-form" class="btn btn-secondary">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Преимущества курса</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🛡️</span>
+                    <h3>Защита данных</h3>
+                    <p>Научитесь создавать надежные пароли и защищать личную информацию от мошенников</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💬</span>
+                    <h3>Безопасное общение</h3>
+                    <p>Узнайте, как распознать опасные ситуации и общаться с незнакомцами в интернете</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🧠</span>
+                    <h3>Цифровая грамотность</h3>
+                    <p>Развивайте навыки критического мышления и проверки информации в сети</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Курсы с видео -->
+    <section id="video-lessons" class="courses">
+        <div class="container">
+            <h2 class="section-title">Наши курсы</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <h3>Основы безопасности</h3>
+                    <p>Базовые правила поведения в интернете</p>
+                    <a class="video-link" onclick="openVideoModal('dQw4w9WgXcQ')">📹 Ссылка на видео-урок →</a>
+                </div>
+                <div class="course-card">
+                    <h3>Пароли и аккаунты</h3>
+                    <p>Как создавать и хранить надежные пароли</p>
+                    <a class="video-link" onclick="openVideoModal('dQw4w9WgXcQ')">📹 Ссылка на видео-урок →</a>
+                </div>
+                <div class="course-card">
+                    <h3>Социальные сети</h3>
+                    <p>Безопасное общение и настройка приватности</p>
+                    <a class="video-link" onclick="openVideoModal('dQw4w9WgXcQ')">📹 Ссылка на видео-урок →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Регистрация -->
+    <section id="register-form" class="register-section">
+        <div class="container">
+            <div class="register-container">
+                <h2>Регистрация</h2>
+                <form id="registrationForm" onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <label for="surname">Фамилия</label>
+                        <input type="text" id="surname" name="surname" required placeholder="Введите фамилию">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Номер телефона</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                    </div>
+                    <button type="submit" class="btn btn-primary register-btn">Записаться на курс</button>
+                </form>
+                <p style="text-align: center; margin-top: 20px; font-size: 14px; color: #6B7A6F;">
+                    Нажимая на кнопку, вы соглашаетесь с обработкой персональных данных
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Подвал (футер) -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Цифровая безопасность</h3>
+                <p>Образовательная платформа для обучения детей и подростков основам цифровой безопасности</p>
+            </div>
+            <div class="footer-col">
+                <h3>Разделы</h3>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#video-lessons">Видео уроки</a></li>
+                    <li><a href="#register-form">Регистрация</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Контакты</h3>
+                <ul class="footer-contacts">
+                    <li>📧 Email: andrejokostromin22@gmail.com</li>
+                    <li>📞 Телефон: +7 (951) - 349-17-19</li>
+                    <li>🕒 Поддержка: 24/7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Центр кибербезопасности. Все права защищены.</p>
+            <div class="footer-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Согласие на обработку персональных данных</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Модальное окно для видео -->
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeVideoModal()">✕</button>
+        <h3>Видео ролик</h3>
+        <div class="video-wrapper">
+            <iframe id="videoIframe" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Мобильное меню
+    const burger = document.getElementById('burgerBtn');
+    const navMenu = document.getElementById('navMenu');
+    burger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Видео модальное окно
+    function openVideoModal(videoId) {
+        const modal = document.getElementById('videoModal');
+        const iframe = document.getElementById('videoIframe');
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoModal() {
+        const modal = document.getElementById('videoModal');
+        const iframe = document.getElementById('videoIframe');
+        iframe.src = '';
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    // Закрытие по клику вне модального окна
+    window.onclick = function(event) {
+        const modal = document.getElementById('videoModal');
+        if (event.target === modal) {
+            closeVideoModal();
+        }
+    }
+
+    // Обработка формы регистрации
+    function handleRegister(event) {
+        event.preventDefault();
+        const surname = document.getElementById('surname').value;
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
+        
+        alert(`Спасибо за регистрацию, ${name} ${surname}!\n\nМы отправили подтверждение на ${email}\nНаш менеджер свяжется с вами по телефону ${phone}`);
+        
+        document.getElementById('registrationForm').reset();
+    }
+</script>
+</body>
+</html>
