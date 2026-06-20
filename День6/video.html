@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео урок: Основы безопасности - Цифровая безопасность</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Логотип">
+                <span>КиберБезопасность</span>
+            </a>
+            <button class="burger" id="burgerBtn">☰</button>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="video.html">Видео уроки</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="video-page">
+        <div class="container">
+            <div class="video-container-page">
+                <h1>Видео урок: Основы безопасности</h1>
+                <p class="video-description">Посмотрите урок о базовых правилах поведения в интернете</p>
+                
+                <!-- ВИДЕО ПЛЕЕР -->
+                <div class="video-player-wrapper">
+                    <video id="videoPlayer" controls poster="превью.png" style="width: 100%; border-radius: 20px; background: #000;">
+                        <source src="video.mp4" type="video/mp4">
+                        <p>Ваш браузер не поддерживает видео. <a href="video.mp4">Скачайте видео</a></p>
+                    </video>
+                </div>
+
+                <!-- ПОДКАСТ (подкаст2.mp3) -->
+                <div class="podcast-section">
+                    <div class="podcast-card">
+                        <div class="podcast-icon">
+                            🎙️
+                        </div>
+                        <div class="podcast-content">
+                            <h3>Подкаст: Пароли и аккаунты</h3>
+                            <p>Слушайте советы по созданию и хранению надежных паролей</p>
+                        </div>
+                        <div class="podcast-player">
+                            <audio controls>
+                                <source src="подкаст2.mp3" type="audio/mpeg">
+                                Ваш браузер не поддерживает аудио-плеер
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Информация об уроке -->
+                <div class="video-info">
+                    <h3>О чем этот урок</h3>
+                    <ul>
+                        <li>Как безопасно общаться в интернете</li>
+                        <li>Как защитить свои личные данные</li>
+                        <li>Как распознать мошенников</li>
+                        <li>Правила создания надежных паролей</li>
+                    </ul>
+                    <a href="register.html" class="btn btn-primary">Записаться на полный курс</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Цифровая безопасность</h3>
+                <p>Образовательная платформа для обучения детей и подростков основам цифровой безопасности</p>
+            </div>
+            <div class="footer-col">
+                <h3>Разделы</h3>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="video.html">Видео уроки</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Контакты</h3>
+                <ul class="footer-contacts">
+                    <li><img src="6.png" alt="Email" class="contact-icon"> andrejokostromin22@gmail.com</li>
+                    <li><img src="5.png" alt="Телефон" class="contact-icon"> +7 (951) - 349-17-19</li>
+                    <li><img src="4.png" alt="Поддержка" class="contact-icon"> Поддержка: 24/7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Центр кибербезопасности. Все права защищены.</p>
+            <div class="footer-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Согласие на обработку персональных данных</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const burger = document.getElementById('burgerBtn');
+    const navMenu = document.getElementById('navMenu');
+    if (burger) {
+        burger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
+</script>
+</body>
+</html>
